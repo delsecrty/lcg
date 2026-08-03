@@ -25,7 +25,10 @@
   }
 
   function findProduct(id) {
-    return (window.LCG_PRODUCTS || []).find((p) => p.id === id);
+    // Nota: LCG_PRODUCTS se declara con "const" en products-data.js, así que no
+    // cuelga de window (solo var/function lo hacen) — hay que referenciarlo así,
+    // apoyándose en que ambos scripts comparten el mismo scope global de módulo clásico.
+    return (typeof LCG_PRODUCTS !== "undefined" ? LCG_PRODUCTS : []).find((p) => p.id === id);
   }
 
   function addToCart(productId, qty, variant) {
