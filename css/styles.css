@@ -607,6 +607,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .qty-stepper button:hover{ background: var(--bg-alt); }
 .qty-stepper input{ width: 46px; text-align: center; border: none; font-weight: 700; }
 
+.pg-personalize-toggle{ background: var(--pink-soft); border-radius: var(--r-md); padding: var(--space-4); margin-bottom: var(--space-4); }
+.pg-personalize-toggle__row{ display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: .92rem; cursor: pointer; }
+.pg-personalize-toggle__row input[type="checkbox"]{ width: 20px; height: 20px; accent-color: var(--pink-strong); cursor: pointer; flex-shrink: 0; }
+.pg-personalize-toggle .hint{ font-size: .78rem; color: var(--text-soft); font-weight: 400; margin: 6px 0 0 30px; }
 .pg-custom-form{ background: var(--lavender-soft); border-radius: var(--r-md); padding: var(--space-4); margin-bottom: var(--space-4); display: flex; flex-direction: column; gap: 12px; }
 .field{ display: flex; flex-direction: column; gap: 6px; }
 .field label{ font-size: .85rem; font-weight: 700; }

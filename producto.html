@@ -145,6 +145,14 @@
             <span data-selected-variant="pg" data-value=""></span>
           </div>
 
+          <div class="pg-personalize-toggle" id="pg-personalize-toggle-wrap" style="display:none;">
+            <label class="pg-personalize-toggle__row" for="pg-personalize-toggle">
+              <input type="checkbox" id="pg-personalize-toggle">
+              ¿Querés personalizarlo?
+            </label>
+            <p class="hint">Activá esta opción para completar tu nombre, marca o Instagram. Si la dejás sin marcar, lo agregamos al carrito sin personalizar.</p>
+          </div>
+
           <div class="pg-custom-form" id="pg-custom-fields" style="display:none;">
             <strong style="font-size:.9rem;">Datos para tu personalización</strong>
             <p class="hint" style="margin-top:-6px;">Completá estos campos para que preparemos tu diseño. Los marcados con * son obligatorios.</p>
@@ -359,21 +367,39 @@
   }
 
   if (product.personalizable && product.customFields && product.customFields.length) {
-    document.getElementById('pg-custom-fields').style.display = 'flex';
+    const toggleWrap = document.getElementById('pg-personalize-toggle-wrap');
+    const toggle = document.getElementById('pg-personalize-toggle');
+    const customFieldsEl = document.getElementById('pg-custom-fields');
+    toggleWrap.style.display = 'block';
+
     const fieldsHtml = product.customFields.map((label, i) => {
-      const required = i < 2; // los dos primeros campos son obligatorios
+      const required = i < 2; // los dos primeros campos son obligatorios cuando se personaliza
       const isLogo = /logo/i.test(label);
-      const isObs = false;
       if (isLogo) {
         return `<div class="field"><label for="cf-${i}">${label}</label><input type="file" id="cf-${i}" accept="image/*,.pdf"></div>`;
       }
       return `<div class="field">
         <label for="cf-${i}" class="${required ? 'required' : ''}">${label}</label>
-        <input type="text" id="cf-${i}" ${required ? 'required' : ''}>
+        <input type="text" id="cf-${i}" data-personalize-required="${required}">
         <span class="field-error">Este campo es obligatorio.</span>
       </div>`;
     }).join('') + `<div class="field"><label for="cf-obs">Observaciones</label><textarea id="cf-obs" rows="2"></textarea></div>`;
     document.getElementById('pg-custom-fields-list').innerHTML = fieldsHtml;
+
+    function applyPersonalizeState(personalizing) {
+      customFieldsEl.style.display = personalizing ? 'flex' : 'none';
+      customFieldsEl.querySelectorAll('[data-personalize-required]').forEach((input) => {
+        const isRequired = input.getAttribute('data-personalize-required') === 'true';
+        if (personalizing && isRequired) {
+          input.setAttribute('required', '');
+        } else {
+          input.removeAttribute('required');
+          input.closest('.field')?.classList.remove('has-error');
+        }
+      });
+    }
+    applyPersonalizeState(false); // por defecto, sin personalizar
+    toggle.addEventListener('change', () => applyPersonalizeState(toggle.checked));
   }
 
   document.getElementById('pg-form').addEventListener('submit', function (e) {
