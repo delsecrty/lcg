@@ -47,8 +47,7 @@ function lcgRenderProductCard(product) {
     ? `<div class="product-card__prices"><span class="product-card__price product-card__price--onrequest">Consultar precio</span></div>`
     : `<div class="product-card__prices">
         <span class="product-card__price">${lcgFormatARS(product.price)}</span>
-      </div>
-      <p class="product-card__price-transfer">${lcgFormatARS(product.priceTransfer)} por transferencia</p>`;
+      </div>`;
   const actionBlock = product.priceOnRequest
     ? `<div class="product-card__actions">
         <a href="https://wa.me/5491156983539?text=${encodeURIComponent('Hola! Quiero consultar precio y disponibilidad de: ' + product.name)}" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Consultar</a>

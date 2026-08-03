@@ -5,7 +5,6 @@
  */
 (function () {
   const STORAGE_KEY = "lcg_cart_v1";
-  const TRANSFER_DISCOUNT = 0.1; // 10% off pagando por transferencia
   const SHIPPING_FLAT = 2500; // envío estimado de referencia (se recalcula en checkout)
   const FREE_SHIPPING_FROM = 25000;
 
@@ -64,9 +63,8 @@
       const p = findProduct(i.id);
       if (p) subtotal += p.price * i.qty;
     });
-    const transferTotal = Math.round(subtotal * (1 - TRANSFER_DISCOUNT));
     const shipping = items.length === 0 ? 0 : subtotal >= FREE_SHIPPING_FROM ? 0 : SHIPPING_FLAT;
-    return { subtotal, transferTotal, shipping, count: items.reduce((a, i) => a + i.qty, 0) };
+    return { subtotal, shipping, count: items.reduce((a, i) => a + i.qty, 0) };
   }
 
   function updateCartCount() {
@@ -118,10 +116,10 @@
     const totals = cartTotals();
     const subtotalEl = document.querySelector("[data-cart-subtotal]");
     const shippingEl = document.querySelector("[data-cart-shipping]");
-    const transferEl = document.querySelector("[data-cart-transfer]");
+    const totalEl = document.querySelector("[data-cart-total]");
     if (subtotalEl) subtotalEl.textContent = lcgFormatARS(totals.subtotal);
     if (shippingEl) shippingEl.textContent = totals.shipping === 0 ? "Gratis" : lcgFormatARS(totals.shipping);
-    if (transferEl) transferEl.textContent = lcgFormatARS(totals.transferTotal + totals.shipping);
+    if (totalEl) totalEl.textContent = lcgFormatARS(totals.subtotal + totals.shipping);
   }
 
   function openCartDrawer() {

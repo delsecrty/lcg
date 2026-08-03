@@ -204,10 +204,6 @@
       document.querySelectorAll("[data-payment-option]").forEach((o) => o.classList.remove("is-selected"));
       opt.classList.add("is-selected");
       opt.querySelector('input[type="radio"]').checked = true;
-      const transferNote = document.querySelector("[data-transfer-note]");
-      if (transferNote) {
-        transferNote.style.display = opt.getAttribute("data-payment-option") === "transferencia" ? "block" : "none";
-      }
     });
   });
 })();

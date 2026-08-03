@@ -398,7 +398,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .product-card__prices{ display: flex; align-items: baseline; gap: 8px; margin-top: 2px; }
 .product-card__price{ font-weight: 800; font-size: 1.08rem; }
 .product-card__price--onrequest{ font-size: .95rem; color: var(--text-soft); font-weight: 700; }
-.product-card__price-transfer{ font-size: .76rem; color: var(--success); font-weight: 700; }
 .product-card__variants{ display: flex; gap: 6px; margin-top: 4px; }
 .swatch{ width: 20px; height: 20px; border-radius: var(--r-full); border: 2px solid var(--white); box-shadow: 0 0 0 1.5px var(--border); }
 .product-card__actions{ margin-top: auto; padding-top: 10px; display: flex; gap: 8px; }
@@ -590,7 +589,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .pg-info__title{ font-size: clamp(1.7rem, 3.6vw, 2.5rem); margin: 6px 0 10px; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.02; }
 .pg-info__prices{ display: flex; align-items: baseline; gap: 12px; margin-bottom: 4px; }
 .pg-info__price{ font-size: 1.7rem; font-weight: 800; }
-.pg-info__price-transfer{ color: var(--success); font-weight: 700; font-size: .92rem; }
 .pg-info__stock{ font-size: .85rem; font-weight: 700; color: var(--success); margin-bottom: var(--space-4); }
 .pg-facts{ display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 10px 20px; background: var(--bg-alt); border-radius: var(--r-md); padding: var(--space-4); margin-bottom: var(--space-4); font-size: .86rem; }
 .pg-facts dt{ color: var(--text-soft); font-weight: 600; }
@@ -668,7 +666,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .cart-coupon input{ flex: 1; border: 1.5px solid var(--border); border-radius: var(--r-full); padding: 9px 14px; }
 .cart-summary-row{ display: flex; justify-content: space-between; font-size: .9rem; }
 .cart-summary-row.total{ font-weight: 800; font-size: 1.05rem; padding-top: 8px; border-top: 1px dashed var(--border); }
-.cart-transfer-note{ background: var(--yellow-soft); color: #8A6A16; border-radius: var(--r-sm); padding: 8px 12px; font-size: .78rem; font-weight: 700; }
 
 /* ==========================================================================
    Checkout

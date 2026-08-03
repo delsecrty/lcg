@@ -4,9 +4,6 @@
  * "Especial Día Del Niño") el 31/07/2026. Nombres, precios, medidas, materiales
  * y fotos son los publicados por LCG en ese momento.
  *
- * El 10% de descuento por transferencia es la política general de la tienda
- * (no un dato del catálogo de WhatsApp) y se calcula sobre el precio de lista.
- *
  * Nota: este es un catálogo chico y estacional. Los productos descriptos en el
  * resto del sitio (tarjetas, toppers, papelería para emprendimientos/repostería)
  * todavía no tienen carga real — quedan como categorías vacías hasta que se
@@ -25,7 +22,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 20 unidades",
     price: 2900,
-    priceTransfer: 2610,
     stock: "in_stock",
     badges: ["new"],
     personalizable: false,
@@ -47,7 +43,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 2 planchas / 36 stickers",
     price: 2900,
-    priceTransfer: 2610,
     stock: "in_stock",
     badges: ["new", "most_picked"],
     personalizable: false,
@@ -69,7 +64,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 8 unidades",
     price: 3500,
-    priceTransfer: 3150,
     stock: "in_stock",
     badges: ["most_picked"],
     personalizable: true,
@@ -92,7 +86,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 15 unidades",
     price: 3500,
-    priceTransfer: 3150,
     stock: "in_stock",
     badges: ["new"],
     personalizable: true,
@@ -115,7 +108,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 15 tags dobles + 15 mini rayitos 3D",
     price: 9900,
-    priceTransfer: 8910,
     stock: "in_stock",
     badges: ["most_picked"],
     personalizable: true,
@@ -138,7 +130,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 15 tags dobles + 15 mini estrellitas 3D",
     price: 9900,
-    priceTransfer: 8910,
     stock: "in_stock",
     badges: ["new", "most_picked"],
     personalizable: true,
@@ -161,7 +152,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 12 unidades",
     price: 6000,
-    priceTransfer: 5400,
     stock: "in_stock",
     badges: ["new"],
     personalizable: true,
@@ -184,7 +174,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 12 unidades",
     price: 6000,
-    priceTransfer: 5400,
     stock: "in_stock",
     badges: ["new"],
     personalizable: true,
@@ -207,7 +196,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Consultar",
     price: null,
-    priceTransfer: null,
     priceOnRequest: true,
     stock: "on_request",
     badges: ["new"],
@@ -230,7 +218,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 24 unidades",
     price: 3500,
-    priceTransfer: 3150,
     stock: "in_stock",
     badges: ["new"],
     personalizable: true,
@@ -253,7 +240,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 16 unidades",
     price: 3500,
-    priceTransfer: 3150,
     stock: "in_stock",
     badges: ["new"],
     personalizable: false,
@@ -275,7 +261,6 @@ const LCG_PRODUCTS = [
     occasion: ["cumpleanos"],
     pack: "Pack x 15 unidades",
     price: null,
-    priceTransfer: null,
     priceOnRequest: true,
     stock: "on_request",
     badges: ["new"],
