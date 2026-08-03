@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Producto | LCG – Las Cosas Que Me Gustan</title>
+<meta name="description" id="page-desc" content="Papelería creativa y personalizada de LCG.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json" id="product-jsonld"></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<div class="topbar" role="region" aria-label="Beneficios de LCG">
+  <div class="topbar__track">
+    <span class="topbar__item">✦ Productos personalizados para cada ocasión</span>
+    <span class="topbar__item">✦ Envíos por moto mensajería y otros medios</span>
+    <span class="topbar__item">✦ 10% de descuento pagando por transferencia</span>
+    <span class="topbar__item">✦ Producción artesanal y por pedido</span>
+  </div>
+</div>
+
+<header class="site-header" data-site-header>
+  <div class="container">
+    <div class="header-main">
+      <button class="header-main__menu-btn" data-mobile-menu-open aria-label="Abrir menú de navegación">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <a href="index.html" class="logo"><img src="assets/logo-lcg.png" alt="LCG – Las Cosas Que Me Gustan" height="52"></a>
+      <form class="header-search" role="search" action="categoria.html" method="get">
+        <label for="search-desktop" class="visually-hidden">Buscar productos</label>
+        <input id="search-desktop" name="q" type="search" placeholder="Buscar stickers, tags, tarjetas…">
+        <button type="submit" aria-label="Buscar"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+      </form>
+      <div class="header-actions">
+        <button class="icon-btn" data-search-toggle aria-label="Buscar"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <a href="cuenta.html" class="icon-btn" aria-label="Mi cuenta"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.6-4 5-6 8-6s6.4 2 8 6"/></svg></a>
+        <a href="https://wa.me/5491156983539" class="icon-btn icon-btn--whatsapp" aria-label="Escribinos por WhatsApp" target="_blank" rel="noopener"><svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg></a>
+        <button class="icon-btn" data-cart-open aria-label="Ver carrito de compras">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.5 3h2l2.4 12.1a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+          <span class="icon-btn__count" data-cart-count>0</span>
+        </button>
+      </div>
+    </div>
+    <div class="header-search-mobile" data-search-mobile style="display:none;">
+      <form role="search" action="categoria.html" method="get">
+        <label for="search-mobile" class="visually-hidden">Buscar productos</label>
+        <input id="search-mobile" name="q" type="search" placeholder="Buscar stickers, tags, tarjetas…">
+      </form>
+    </div>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="index.html">Inicio</a></li>
+        <li class="main-nav__item has-dropdown">
+          <a class="main-nav__link" href="categoria.html" aria-haspopup="true">Productos ▾</a>
+          <div class="main-nav__dropdown">
+            <a href="categoria.html?cat=stickers">Stickers</a>
+            <a href="categoria.html?cat=tags">Tags y mini tags</a>
+            <a href="categoria.html?cat=tarjetas">Tarjetas y tarjetones</a>
+            <a href="categoria.html?cat=etiquetas">Etiquetas personalizadas</a>
+            <a href="categoria.html?cat=papeleria-reposteria">Papelería para repostería</a>
+            <a href="categoria.html">Ver todos los productos</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="categoria.html?filter=nuevo">Novedades</a></li>
+        <li><a class="main-nav__link" href="categoria.html?cat=cumpleanos">Cumpleaños y eventos</a></li>
+        <li><a class="main-nav__link main-nav__link--sale" href="categoria.html?filter=ofertas">Ofertas</a></li>
+        <li><a class="main-nav__link" href="como-comprar.html">Cómo comprar</a></li>
+        <li><a class="main-nav__link" href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+        <li><a class="main-nav__link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" data-mobile-menu>
+  <div class="mobile-menu__backdrop" data-mobile-menu-backdrop></div>
+  <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <div class="mobile-menu__head">
+      <a href="index.html" class="logo"><img src="assets/logo-lcg.png" alt="LCG – Las Cosas Que Me Gustan" height="52"></a>
+      <button class="mobile-menu__close" data-mobile-menu-close aria-label="Cerrar menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="categoria.html">Ver todos los productos</a></li>
+      <li><a href="categoria.html?filter=nuevo">Novedades</a></li>
+      <li><a href="como-comprar.html">Cómo comprar</a></li>
+      <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="https://wa.me/5491156983539" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Migas de pan">
+      <a href="index.html">Inicio</a><span>/</span>
+      <a href="categoria.html" id="crumb-cat-link">Productos</a><span>/</span>
+      <span aria-current="page" id="crumb-current">Producto</span>
+    </nav>
+
+    <div class="product-page" data-buy-anchor>
+      <!-- Galería -->
+      <div>
+        <div class="pg-gallery" data-gallery>
+          <div class="pg-gallery__main" data-gallery-main>
+            <div class="ph-photo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Foto principal — hacé clic para ampliar (zoom)
+            </div>
+          </div>
+          <div class="pg-gallery__thumbs" id="pg-thumbs"></div>
+        </div>
+      </div>
+
+      <!-- Información -->
+      <div>
+        <p class="pg-info__cat" id="pg-cat">Categoría</p>
+        <h1 class="pg-info__title" id="pg-title">Nombre del producto</h1>
+        <div class="pg-info__prices">
+          <span class="pg-info__price" id="pg-price">$0</span>
+        </div>
+        <p class="pg-info__price-transfer" id="pg-price-transfer">$0 pagando por transferencia (10% off)</p>
+        <p class="pg-info__stock" id="pg-stock">En stock</p>
+
+        <dl class="pg-facts">
+          <div><dt>Unidades incluidas</dt><dd id="pg-pack">—</dd></div>
+          <div><dt>Medidas</dt><dd id="pg-measures">—</dd></div>
+          <div><dt>Material</dt><dd id="pg-material">—</dd></div>
+          <div><dt>Terminación</dt><dd id="pg-finish">—</dd></div>
+          <div><dt>Tiempo de producción</dt><dd id="pg-production">—</dd></div>
+          <div><dt>Cantidad mínima</dt><dd id="pg-minqty">—</dd></div>
+        </dl>
+
+        <p id="pg-description" style="color:var(--text-soft); margin-bottom:20px;"></p>
+
+        <form data-custom-form id="pg-form">
+          <div class="pg-option-group" id="pg-swatch-group-wrap" style="display:none;">
+            <label class="field-label">Color preferido</label>
+            <div class="pg-swatches" data-swatch-group id="pg-swatches"></div>
+            <span data-selected-variant="pg" data-value=""></span>
+          </div>
+
+          <div class="pg-custom-form" id="pg-custom-fields" style="display:none;">
+            <strong style="font-size:.9rem;">Datos para tu personalización</strong>
+            <p class="hint" style="margin-top:-6px;">Completá estos campos para que preparemos tu diseño. Los marcados con * son obligatorios.</p>
+            <div id="pg-custom-fields-list"></div>
+          </div>
+
+          <div class="pg-option-group">
+            <label class="field-label" for="pg-qty">Cantidad de packs</label>
+            <div class="qty-stepper">
+              <button type="button" data-step="minus" data-step-target="#pg-qty" aria-label="Restar">−</button>
+              <input type="text" id="pg-qty" inputmode="numeric" value="1" min="1" data-product-qty="pg-id-placeholder">
+              <button type="button" data-step="plus" data-step-target="#pg-qty" aria-label="Sumar">+</button>
+            </div>
+          </div>
+
+          <div class="pg-cta-row">
+            <button type="submit" class="btn btn-primary" id="pg-add-btn">Agregar al carrito</button>
+            <a href="#" class="btn btn-whatsapp" data-wa-quick id="pg-wa-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </form>
+
+        <div class="pg-shipping-check">
+          <label for="pg-cp" class="visually-hidden">Código postal</label>
+          <input id="pg-cp" type="text" placeholder="Ingresá tu código postal" inputmode="numeric">
+          <button class="btn btn-ghost btn-sm" type="button" id="pg-cp-btn">Calcular envío</button>
+        </div>
+        <p id="pg-cp-result" style="font-size:.85rem; color:var(--success); font-weight:700; display:none;">Envío estimado: llega en 2 a 4 días hábiles por moto mensajería o correo.</p>
+
+        <p style="font-size:.85rem; color:var(--text-soft); background:var(--sky-soft); border-radius:var(--r-sm); padding:12px 14px;">
+          ¿Cómo enviamos tu logo, nombre o datos? Podés escribirnos por WhatsApp o completar el formulario de personalización de arriba — aceptamos archivos PNG, JPG o PDF.
+        </p>
+
+        <p class="pg-color-note">Los colores pueden variar levemente según la configuración de tu pantalla.</p>
+
+        <div style="margin-top:28px;">
+          <div class="accordion-item">
+            <button class="accordion-trigger" data-accordion-trigger aria-expanded="false">¿Puedo pedir una cantidad distinta a la del pack? <span class="accordion-icon">+</span></button>
+            <div class="accordion-panel">Sí, escribinos por WhatsApp con la cantidad que necesitás y te cotizamos sin problema.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" data-accordion-trigger aria-expanded="false">¿Cuánto tardan en producir mi pedido? <span class="accordion-icon">+</span></button>
+            <div class="accordion-panel">El tiempo de producción indicado arriba comienza a correr una vez que confirmás el diseño. Los envíos se coordinan después.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" data-accordion-trigger aria-expanded="false">¿Puedo ver el diseño antes de que lo produzcan? <span class="accordion-icon">+</span></button>
+            <div class="accordion-panel">Sí, siempre te enviamos una vista previa por WhatsApp para que la apruebes antes de imprimir.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section--tight">
+      <div class="section-head">
+        <span class="eyebrow">También te puede interesar</span>
+        <h2 class="section-title" style="font-size:1.6rem;">Productos relacionados</h2>
+      </div>
+      <div class="product-grid" data-related-grid></div>
+    </section>
+  </div>
+</main>
+
+<div class="sticky-buy-bar" data-sticky-buy>
+  <span class="sticky-buy-bar__price" id="sticky-price">$0</span>
+  <button class="btn btn-primary btn-block" id="sticky-add-btn" type="button">Agregar al carrito</button>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-chip"><img src="assets/logo-lcg-pink.png" alt="LCG – Las Cosas Que Me Gustan"></a>
+      <p>Papelería creativa y personalizada para emprendimientos, regalos y momentos especiales. Hecho a pedido en Argentina.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/lcg.lascosasquemegustan/" target="_blank" rel="noopener" aria-label="Instagram de LCG"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="https://wa.me/5491156983539" target="_blank" rel="noopener" aria-label="WhatsApp de LCG"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Categorías">
+      <h4>Categorías</h4>
+      <ul>
+        <li><a href="categoria.html?cat=stickers">Stickers</a></li>
+        <li><a href="categoria.html?cat=tags">Tags y mini tags</a></li>
+        <li><a href="categoria.html?cat=tarjetas">Tarjetas y tarjetones</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Ayuda">
+      <h4>Ayuda</h4>
+      <ul>
+        <li><a href="como-comprar.html">Cómo comprar</a></li>
+        <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+        <li><a href="como-comprar.html#envios">Envíos</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="mailto:hola@lascosasquemegustan.com.ar">hola@lascosasquemegustan.com.ar</a></li>
+        <li><a href="https://wa.me/5491156983539" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+      <div class="footer-payments">
+        <span class="pay-chip">Mercado Pago</span>
+        <span class="pay-chip">Transferencia</span>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 LCG – Las Cosas Que Me Gustan.</span>
+    <div class="footer-legal">
+      <a href="#">Políticas de privacidad</a>
+      <a href="#">Términos y condiciones</a>
+    </div>
+  </div>
+</footer>
+
+<button class="wa-float" data-wa-float aria-label="Abrir opciones de WhatsApp" aria-haspopup="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg></button>
+<div class="wa-menu" data-wa-menu role="menu" aria-label="Opciones de mensaje por WhatsApp">
+  <h4>¿En qué te ayudamos?</h4>
+  <a data-wa-msg="consulta" target="_blank" rel="noopener">Quiero consultar por este producto</a>
+  <a data-wa-msg="personalizar" target="_blank" rel="noopener">Quiero personalizar este diseño</a>
+  <a data-wa-msg="pedido" target="_blank" rel="noopener">Necesito ayuda con mi pedido</a>
+  <a data-wa-msg="cotizar" target="_blank" rel="noopener">Quiero cotizar una cantidad diferente</a>
+</div>
+
+<div class="cart-drawer" data-cart-drawer>
+  <div class="cart-drawer__backdrop" data-cart-backdrop></div>
+  <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+    <div class="cart-drawer__head">
+      <h2 style="font-size:1.1rem;">Tu carrito</h2>
+      <button class="cart-drawer__close" data-cart-close aria-label="Cerrar carrito"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="cart-drawer__items" data-cart-items></div>
+    <div class="cart-empty" data-cart-empty>
+      <p>Tu carrito está vacío por ahora.</p>
+      <a href="categoria.html" class="btn btn-secondary" style="margin-top:14px;">Ver productos</a>
+    </div>
+    <div class="cart-drawer__foot" data-cart-foot style="display:none;">
+      <div class="cart-coupon">
+        <label for="coupon" class="visually-hidden">Cupón de descuento</label>
+        <input id="coupon" type="text" placeholder="Cupón de descuento">
+        <button class="btn btn-ghost btn-sm" type="button">Aplicar</button>
+      </div>
+      <div class="cart-summary-row"><span>Subtotal</span><span data-cart-subtotal>$0</span></div>
+      <div class="cart-summary-row"><span>Envío estimado</span><span data-cart-shipping>—</span></div>
+      <div class="cart-summary-row total"><span>Total por transferencia</span><span data-cart-transfer>$0</span></div>
+      <div class="cart-transfer-note">10% off pagando por transferencia bancaria</div>
+      <a href="checkout.html" class="btn btn-primary btn-block">Finalizar compra</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/products-data.js"></script>
+<script src="js/render.js"></script>
+<script>
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id') || LCG_PRODUCTS[0].id;
+  const product = LCG_PRODUCTS.find(p => p.id === id) || LCG_PRODUCTS[0];
+
+  document.getElementById('page-title').textContent = product.name + ' | LCG – Las Cosas Que Me Gustan';
+  document.getElementById('page-desc').setAttribute('content', product.description);
+  document.getElementById('crumb-cat-link').textContent = product.categoryLabel;
+  document.getElementById('crumb-cat-link').href = 'categoria.html?cat=' + product.category;
+  document.getElementById('crumb-current').textContent = product.name;
+
+  document.getElementById('pg-cat').textContent = product.categoryLabel;
+  document.getElementById('pg-title').textContent = product.name;
+  if (product.priceOnRequest) {
+    document.getElementById('pg-price').textContent = 'Consultar precio';
+    document.getElementById('pg-price-transfer').textContent = 'Escribinos por WhatsApp para conocer precio y disponibilidad';
+    document.getElementById('sticky-price').textContent = 'Consultar precio';
+  } else {
+    document.getElementById('pg-price').textContent = lcgFormatARS(product.price);
+    document.getElementById('pg-price-transfer').textContent = lcgFormatARS(product.priceTransfer) + ' pagando por transferencia (10% off)';
+    document.getElementById('sticky-price').textContent = lcgFormatARS(product.price);
+  }
+  document.getElementById('pg-stock').textContent = product.stock === 'last_units' ? 'Últimas unidades disponibles' : product.stock === 'on_request' ? 'Disponibilidad a confirmar' : 'En stock';
+  document.getElementById('pg-pack').textContent = product.pack;
+  document.getElementById('pg-measures').textContent = product.measures;
+  document.getElementById('pg-material').textContent = product.material;
+  document.getElementById('pg-finish').textContent = product.finish;
+  document.getElementById('pg-production').textContent = product.productionTime;
+  document.getElementById('pg-minqty').textContent = typeof product.minQty === 'number' ? product.minQty + ' unidades' : product.minQty;
+  document.getElementById('pg-description').textContent = product.description;
+  document.getElementById('pg-qty').setAttribute('data-product-qty', product.id);
+
+  if (product.priceOnRequest) {
+    document.getElementById('pg-add-btn').style.display = 'none';
+    document.getElementById('pg-qty').closest('.pg-option-group').style.display = 'none';
+    document.getElementById('sticky-add-btn').style.display = 'none';
+  }
+
+  // Galería de fotos reales del producto
+  const galleryMain = document.querySelector('[data-gallery-main]');
+  const galleryThumbs = document.getElementById('pg-thumbs');
+  const images = product.images && product.images.length ? product.images : null;
+  function setMainImage(src, alt) {
+    galleryMain.innerHTML = `<img src="${src}" alt="${alt}" style="width:100%;height:100%;object-fit:cover;">`;
+  }
+  if (images) {
+    setMainImage(images[0], product.name);
+    galleryThumbs.innerHTML = images.map((src, i) =>
+      `<button type="button" data-gallery-thumb data-src="${src}" aria-current="${i === 0}"><img src="${src}" alt="Foto ${i + 1} de ${product.name}" style="width:100%;height:100%;object-fit:cover;"></button>`
+    ).join('');
+  } else {
+    galleryThumbs.innerHTML = `<button type="button" data-gallery-thumb aria-current="true">Foto 1</button>`;
+  }
+
+  if (product.swatches && product.swatches.length > 1) {
+    document.getElementById('pg-swatch-group-wrap').style.display = 'block';
+    document.getElementById('pg-swatches').innerHTML = product.swatches.map((c, i) =>
+      `<button type="button" class="pg-swatch-btn" style="background:${c}" data-swatch="${c}" aria-pressed="${i===0}" aria-label="Color ${i+1}"></button>`
+    ).join('');
+    document.querySelector('[data-selected-variant="pg"]').setAttribute('data-value', product.swatches[0]);
+  }
+
+  if (product.personalizable && product.customFields && product.customFields.length) {
+    document.getElementById('pg-custom-fields').style.display = 'flex';
+    const fieldsHtml = product.customFields.map((label, i) => {
+      const required = i < 2; // los dos primeros campos son obligatorios
+      const isLogo = /logo/i.test(label);
+      const isObs = false;
+      if (isLogo) {
+        return `<div class="field"><label for="cf-${i}">${label}</label><input type="file" id="cf-${i}" accept="image/*,.pdf"></div>`;
+      }
+      return `<div class="field">
+        <label for="cf-${i}" class="${required ? 'required' : ''}">${label}</label>
+        <input type="text" id="cf-${i}" ${required ? 'required' : ''}>
+        <span class="field-error">Este campo es obligatorio.</span>
+      </div>`;
+    }).join('') + `<div class="field"><label for="cf-obs">Observaciones</label><textarea id="cf-obs" rows="2"></textarea></div>`;
+    document.getElementById('pg-custom-fields-list').innerHTML = fieldsHtml;
+  }
+
+  document.getElementById('pg-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const hasErrors = this.querySelector('.field.has-error');
+    if (hasErrors) return; // main.js ya marcó los errores
+    const variant = document.querySelector('[data-selected-variant="pg"]')?.getAttribute('data-value') || '';
+    const qty = parseInt(document.getElementById('pg-qty').value, 10) || 1;
+    window.LCGCart.addToCart(product.id, qty, variant);
+  });
+  document.getElementById('sticky-add-btn').addEventListener('click', function () {
+    document.getElementById('pg-form').requestSubmit ? document.getElementById('pg-form').requestSubmit() : document.getElementById('pg-add-btn').click();
+  });
+
+  // Relacionados
+  const related = (product.related || []).map(rid => LCG_PRODUCTS.find(p => p.id === rid)).filter(Boolean);
+  lcgRenderProductGrid('[data-related-grid]', related.length ? related : LCG_PRODUCTS.filter(p => p.id !== product.id).slice(0,4));
+
+  // JSON-LD Product
+  const jsonld = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "description": product.description,
+    "sku": product.id,
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "ARS",
+      "availability": product.priceOnRequest ? "https://schema.org/InStoreOnly" : (product.stock === 'last_units' ? "https://schema.org/LimitedAvailability" : "https://schema.org/InStock"),
+      "url": window.location.href
+    }
+  };
+  if (!product.priceOnRequest) jsonld.offers.price = product.price;
+  document.getElementById('product-jsonld').textContent = JSON.stringify(jsonld);
+})();
+</script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

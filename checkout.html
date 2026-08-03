@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | LCG – Las Cosas Que Me Gustan</title>
+<meta name="description" content="Finalizá tu compra en LCG de forma simple y segura: Mercado Pago, transferencia bancaria, envío a domicilio o retiro coordinado.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<header class="site-header" data-site-header>
+  <div class="container">
+    <div class="header-main">
+      <a href="index.html" class="logo"><img src="assets/logo-lcg.png" alt="LCG – Las Cosas Que Me Gustan" height="52"></a>
+      <div class="header-actions" style="margin-left:auto;">
+        <a href="index.html" class="btn btn-ghost btn-sm">Seguir comprando</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Migas de pan">
+      <a href="index.html">Inicio</a><span>/</span><span aria-current="page">Checkout</span>
+    </nav>
+
+    <h1 class="section-title" style="font-size:1.8rem; margin-bottom:20px;">Finalizar compra</h1>
+
+    <div class="checkout-steps">
+      <div class="checkout-step is-active"><span class="num">1</span> Datos de contacto</div>
+      <div class="checkout-step"><span class="num">2</span> Envío</div>
+      <div class="checkout-step"><span class="num">3</span> Pago</div>
+    </div>
+
+    <div class="checkout-layout">
+      <div>
+        <div class="checkout-card">
+          <h3>1. Datos de contacto</h3>
+          <div class="form-grid cols-2">
+            <div class="field"><label for="co-name" class="required">Nombre y apellido</label><input id="co-name" type="text" required></div>
+            <div class="field"><label for="co-email" class="required">Correo electrónico</label><input id="co-email" type="email" required></div>
+            <div class="field"><label for="co-phone" class="required">Teléfono / WhatsApp</label><input id="co-phone" type="tel" required></div>
+            <div class="field"><label for="co-dni">DNI (para factura)</label><input id="co-dni" type="text"></div>
+          </div>
+        </div>
+
+        <div class="checkout-card">
+          <h3>2. Envío</h3>
+          <div class="payment-option is-selected" data-payment-option="domicilio">
+            <input type="radio" name="shipping" checked>
+            <div><strong>Envío a domicilio (moto mensajería / correo)</strong><br><small>Llega en 2 a 4 días hábiles luego de producción. Se calcula por código postal.</small></div>
+          </div>
+          <div class="payment-option" data-payment-option="retiro">
+            <input type="radio" name="shipping">
+            <div><strong>Retiro coordinado</strong><br><small>Coordinamos día y horario por WhatsApp, sin costo de envío.</small></div>
+          </div>
+          <div class="form-grid cols-2" style="margin-top:14px;">
+            <div class="field"><label for="co-address">Dirección</label><input id="co-address" type="text"></div>
+            <div class="field"><label for="co-cp">Código postal</label><input id="co-cp" type="text" inputmode="numeric"></div>
+            <div class="field"><label for="co-city">Localidad</label><input id="co-city" type="text"></div>
+            <div class="field"><label for="co-prov">Provincia</label><input id="co-prov" type="text"></div>
+          </div>
+        </div>
+
+        <div class="checkout-card">
+          <h3>3. Medio de pago</h3>
+          <div class="payment-option is-selected" data-payment-option="mercadopago">
+            <input type="radio" name="payment" checked>
+            <div><strong>Mercado Pago</strong><br><small>Tarjetas de crédito, débito o dinero en cuenta.</small></div>
+          </div>
+          <div class="payment-option" data-payment-option="transferencia">
+            <input type="radio" name="payment">
+            <div><strong>Transferencia bancaria — 10% de descuento</strong><br><small>Te enviamos los datos por WhatsApp o correo al confirmar el pedido.</small></div>
+          </div>
+          <p data-transfer-note style="display:none; background:var(--yellow-soft); color:#8A6A16; border-radius:var(--r-sm); padding:10px 14px; font-size:.85rem; font-weight:700; margin-top:10px;">
+            El 10% de descuento por transferencia se aplica automáticamente al total al elegir este medio de pago.
+          </p>
+        </div>
+
+        <a href="#" class="btn btn-primary btn-block" style="margin-top:6px;">Confirmar y pagar</a>
+        <p style="font-size:.78rem; color:var(--text-soft); text-align:center; margin-top:10px;">Al confirmar aceptás los <a href="#" style="text-decoration:underline;">Términos y condiciones</a> y la <a href="#" style="text-decoration:underline;">Política de privacidad</a> de LCG.</p>
+      </div>
+
+      <aside class="order-summary">
+        <div class="checkout-card">
+          <h3>Tu pedido</h3>
+          <div class="cart-drawer__items" data-cart-items style="padding:0; max-height:320px; overflow-y:auto;"></div>
+          <div class="cart-empty" data-cart-empty style="padding:24px 0;">
+            <p>Tu carrito está vacío.</p>
+            <a href="categoria.html" class="btn btn-secondary btn-sm" style="margin-top:10px;">Ver productos</a>
+          </div>
+          <div data-cart-foot style="display:none; margin-top:14px;">
+            <div class="cart-coupon" style="margin-bottom:12px;">
+              <label for="co-coupon" class="visually-hidden">Cupón</label>
+              <input id="co-coupon" type="text" placeholder="Cupón de descuento">
+              <button class="btn btn-ghost btn-sm" type="button">Aplicar</button>
+            </div>
+            <div class="cart-summary-row"><span>Subtotal</span><span data-cart-subtotal>$0</span></div>
+            <div class="cart-summary-row"><span>Envío estimado</span><span data-cart-shipping>—</span></div>
+            <div class="cart-summary-row total"><span>Total por transferencia</span><span data-cart-transfer>$0</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-bottom" style="border-top:none;">
+    <span>© 2026 LCG – Las Cosas Que Me Gustan. Compra 100% coordinada y verificada por WhatsApp.</span>
+    <div class="footer-legal">
+      <a href="#">Defensa del consumidor</a>
+      <a href="#">Botón de arrepentimiento</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products-data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

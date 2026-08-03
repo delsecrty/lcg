@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /checkout.html
+Disallow: /cuenta.html
+
+Sitemap: https://www.lascosasquemegustan.com.ar/sitemap.xml
