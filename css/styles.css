@@ -624,8 +624,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .field.has-error .field-error{ display: block; }
 
 .pg-cta-row{ display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: var(--space-4); }
-.pg-shipping-check{ display: flex; gap: 8px; margin-bottom: var(--space-4); }
-.pg-shipping-check input{ flex: 1; border: 1.5px solid var(--border); border-radius: var(--r-full); padding: 11px 16px; }
+.pg-shipping-check{ display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--space-4); }
+.pg-shipping-check input{ flex: 1 1 160px; min-width: 0; border: 1.5px solid var(--border); border-radius: var(--r-full); padding: 11px 16px; }
+.pg-shipping-check button{ flex-shrink: 0; }
 .pg-color-note{ font-size: .78rem; color: var(--text-soft); border-top: 1px solid var(--border); padding-top: 14px; margin-top: 6px; }
 
 .accordion-item{ border-bottom: 1px solid var(--border); }
