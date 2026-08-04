@@ -169,6 +169,32 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .badge-offer{ background: var(--pink-soft); color: #A83E63; border-color: var(--pink); }
 
 /* ==========================================================================
+   Preloader de carga
+   ========================================================================== */
+.page-preloader{
+  position: fixed; inset: 0; z-index: 10000;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.page-preloader__fill{
+  position: absolute; inset: 0; background: var(--pink-strong);
+  transform: translateY(100%);
+  animation: page-preloader-fill .7s cubic-bezier(.65,0,.35,1) forwards;
+}
+.page-preloader__logo{
+  position: relative; width: 140px; max-width: 40vw; height: auto; opacity: 0;
+  animation: page-preloader-logo .5s ease .5s forwards;
+}
+@keyframes page-preloader-fill{ to{ transform: translateY(0); } }
+@keyframes page-preloader-logo{ to{ opacity: 1; } }
+.page-preloader.is-hiding{ transition: opacity .45s ease; opacity: 0; }
+.page-preloader.is-hidden{ display: none; }
+@media (prefers-reduced-motion: reduce){
+  .page-preloader__fill{ animation: none; transform: translateY(0); }
+  .page-preloader__logo{ animation: none; opacity: 1; }
+}
+
+/* ==========================================================================
    Barra superior de beneficios
    ========================================================================== */
 .topbar{

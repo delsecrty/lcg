@@ -5,6 +5,25 @@
 (function () {
   const WHATSAPP_NUMBER = "5491156983539"; // +54 9 11 5698-3539
 
+  /* ---------- Preloader de carga ---------- */
+  const preloader = document.querySelector("[data-page-preloader]");
+  if (preloader) {
+    const MIN_VISIBLE_MS = 900;
+    const start = Date.now();
+    const hidePreloader = () => {
+      const wait = Math.max(0, MIN_VISIBLE_MS - (Date.now() - start));
+      setTimeout(() => {
+        preloader.classList.add("is-hiding");
+        preloader.addEventListener("transitionend", () => preloader.classList.add("is-hidden"), { once: true });
+      }, wait);
+    };
+    if (document.readyState === "complete") {
+      hidePreloader();
+    } else {
+      window.addEventListener("load", hidePreloader);
+    }
+  }
+
   /* ---------- Header sticky con sombra al hacer scroll ---------- */
   const header = document.querySelector("[data-site-header]");
   if (header) {
