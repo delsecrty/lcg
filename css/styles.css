@@ -670,8 +670,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .cart-item__remove{ font-size: .78rem; color: var(--error); background: none; border: none; padding: 0; text-decoration: underline; margin-top: 6px; }
 .cart-empty{ text-align: center; padding: var(--space-7) var(--space-4); color: var(--text-soft); }
 .cart-drawer__foot{ border-top: 1px solid var(--border); padding: 16px 20px 20px; display: flex; flex-direction: column; gap: 10px; }
-.cart-coupon{ display: flex; gap: 8px; }
-.cart-coupon input{ flex: 1; border: 1.5px solid var(--border); border-radius: var(--r-full); padding: 9px 14px; }
+.cart-coupon{ display: flex; flex-wrap: wrap; gap: 8px; }
+.cart-coupon input{ flex: 1 1 120px; min-width: 0; border: 1.5px solid var(--border); border-radius: var(--r-full); padding: 9px 14px; }
+.cart-coupon button{ flex-shrink: 0; }
 .cart-summary-row{ display: flex; justify-content: space-between; font-size: .9rem; }
 .cart-summary-row.total{ font-weight: 800; font-size: 1.05rem; padding-top: 8px; border-top: 1px dashed var(--border); }
 
