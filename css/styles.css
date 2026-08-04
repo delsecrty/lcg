@@ -501,6 +501,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
    Footer
    ========================================================================== */
 .site-footer{ background: var(--text); color: var(--bg); margin-top: var(--space-9); }
+@media (max-width: 767px){ .site-footer .container{ padding-left: 28px; padding-right: 28px; } }
 .footer-top{ padding: var(--space-8) 0 var(--space-6); display: grid; gap: var(--space-6); grid-template-columns: minmax(0,1fr); }
 @media (min-width: 780px){ .footer-top{ grid-template-columns: 1.3fr minmax(0,1fr) minmax(0,1fr) minmax(0,1fr); } }
 .footer-brand .logo{ color: var(--bg); }
