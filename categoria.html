@@ -4,8 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="page-title">Productos | LCG – Las Cosas Que Me Gustan</title>
-<meta name="description" content="Descubrí stickers, tags, tarjetas, toppers y papelería personalizada de LCG. Filtrá por categoría, ocasión, precio y disponibilidad.">
-<link rel="canonical" href="https://www.lascosasquemegustan.com.ar/categoria.html">
+<meta name="description" id="page-desc" content="Descubrí stickers, tags, tarjetas, toppers y papelería personalizada de LCG. Filtrá por categoría, ocasión, precio y disponibilidad.">
+<link rel="canonical" id="page-canonical" href="https://www.lascosasquemegustan.com.ar/categoria.html">
+<meta property="og:type" content="website">
+<meta property="og:title" id="og-title" content="Productos | LCG – Las Cosas Que Me Gustan">
+<meta property="og:description" id="og-desc" content="Descubrí stickers, tags, tarjetas, toppers y papelería personalizada de LCG. Filtrá por categoría, ocasión, precio y disponibilidad.">
+<meta property="og:url" id="og-url" content="https://www.lascosasquemegustan.com.ar/categoria.html">
+<meta property="og:image" content="https://www.lascosasquemegustan.com.ar/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" id="twitter-title" content="Productos | LCG – Las Cosas Que Me Gustan">
+<meta name="twitter:description" id="twitter-desc" content="Descubrí stickers, tags, tarjetas, toppers y papelería personalizada de LCG. Filtrá por categoría, ocasión, precio y disponibilidad.">
+<meta name="twitter:image" content="https://www.lascosasquemegustan.com.ar/assets/og-image.jpg">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="assets/favicon-512.png" sizes="512x512" type="image/png">
@@ -319,7 +328,21 @@
     document.getElementById('cat-title').textContent = titleText;
     document.getElementById('cat-desc').textContent = descText;
     document.getElementById('crumb-current').textContent = titleText;
-    document.getElementById('page-title').textContent = titleText + ' | LCG – Las Cosas Que Me Gustan';
+
+    const SITE_URL = 'https://www.lascosasquemegustan.com.ar/';
+    const pageTitle = titleText + ' | LCG – Las Cosas Que Me Gustan';
+    // El canonical solo refleja el parámetro que define contenido distinto (?cat=);
+    // se ignoran filter/q/sort/page para no generar canonicals duplicados por ruido.
+    const pageUrl = SITE_URL + 'categoria.html' + (catSlug ? '?cat=' + catSlug : '');
+
+    document.getElementById('page-title').textContent = pageTitle;
+    document.getElementById('page-desc').setAttribute('content', descText);
+    document.getElementById('page-canonical').setAttribute('href', pageUrl);
+    document.getElementById('og-title').setAttribute('content', pageTitle);
+    document.getElementById('og-desc').setAttribute('content', descText);
+    document.getElementById('og-url').setAttribute('content', pageUrl);
+    document.getElementById('twitter-title').setAttribute('content', pageTitle);
+    document.getElementById('twitter-desc').setAttribute('content', descText);
 
     let currentPage = 1;
     const sortSelect = document.getElementById('sort');

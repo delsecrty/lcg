@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="page-title">Producto | LCG – Las Cosas Que Me Gustan</title>
 <meta name="description" id="page-desc" content="Papelería creativa y personalizada de LCG.">
+<link rel="canonical" id="page-canonical" href="https://www.lascosasquemegustan.com.ar/producto.html">
+<meta property="og:type" content="product">
+<meta property="og:title" id="og-title" content="LCG – Las Cosas Que Me Gustan">
+<meta property="og:description" id="og-desc" content="Papelería creativa y personalizada de LCG.">
+<meta property="og:url" id="og-url" content="https://www.lascosasquemegustan.com.ar/producto.html">
+<meta property="og:image" id="og-image" content="https://www.lascosasquemegustan.com.ar/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" id="twitter-title" content="LCG – Las Cosas Que Me Gustan">
+<meta name="twitter:description" id="twitter-desc" content="Papelería creativa y personalizada de LCG.">
+<meta name="twitter:image" id="twitter-image" content="https://www.lascosasquemegustan.com.ar/assets/og-image.jpg">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="assets/favicon-512.png" sizes="512x512" type="image/png">
@@ -316,8 +326,21 @@
   const id = params.get('id') || LCG_PRODUCTS[0].id;
   const product = LCG_PRODUCTS.find(p => p.id === id) || LCG_PRODUCTS[0];
 
-  document.getElementById('page-title').textContent = product.name + ' | LCG – Las Cosas Que Me Gustan';
+  const SITE_URL = 'https://www.lascosasquemegustan.com.ar/';
+  const pageTitle = product.name + ' | LCG – Las Cosas Que Me Gustan';
+  const pageUrl = SITE_URL + 'producto.html?id=' + product.id;
+  const pageImage = product.images && product.images.length ? SITE_URL + product.images[0] : SITE_URL + 'assets/og-image.jpg';
+
+  document.getElementById('page-title').textContent = pageTitle;
   document.getElementById('page-desc').setAttribute('content', product.description);
+  document.getElementById('page-canonical').setAttribute('href', pageUrl);
+  document.getElementById('og-title').setAttribute('content', pageTitle);
+  document.getElementById('og-desc').setAttribute('content', product.description);
+  document.getElementById('og-url').setAttribute('content', pageUrl);
+  document.getElementById('og-image').setAttribute('content', pageImage);
+  document.getElementById('twitter-title').setAttribute('content', pageTitle);
+  document.getElementById('twitter-desc').setAttribute('content', product.description);
+  document.getElementById('twitter-image').setAttribute('content', pageImage);
   document.getElementById('crumb-cat-link').textContent = product.categoryLabel;
   document.getElementById('crumb-cat-link').href = 'categoria.html?cat=' + product.category;
   document.getElementById('crumb-current').textContent = product.name;
@@ -430,11 +453,14 @@
     "name": product.name,
     "description": product.description,
     "sku": product.id,
+    "image": product.images && product.images.length ? product.images.map(src => SITE_URL + src) : [pageImage],
+    "url": pageUrl,
+    "brand": { "@type": "Brand", "name": "LCG – Las Cosas Que Me Gustan" },
     "offers": {
       "@type": "Offer",
       "priceCurrency": "ARS",
       "availability": product.priceOnRequest ? "https://schema.org/InStoreOnly" : (product.stock === 'last_units' ? "https://schema.org/LimitedAvailability" : "https://schema.org/InStock"),
-      "url": window.location.href
+      "url": pageUrl
     }
   };
   if (!product.priceOnRequest) jsonld.offers.price = product.price;
