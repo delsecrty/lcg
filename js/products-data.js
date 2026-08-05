@@ -31,7 +31,7 @@ const LCG_PRODUCTS = [
     productionTime: "3 a 5 días hábiles",
     minQty: 20,
     description: "20 washi tapes con estampado “¡Feliz Día!”, ideales para decorar tarjetas, regalos y manualidades. Impresas en autoadhesivo brillante de 115 g.",
-    images: ["assets/productos/washi-tapes-1.png", "assets/productos/washi-tapes-2.png"],
+    images: ["assets/productos/washi-tapes-1.jpg", "assets/productos/washi-tapes-2.jpg"],
     related: ["stk-superheroes", "etq-mini"],
   },
   {
@@ -52,7 +52,7 @@ const LCG_PRODUCTS = [
     productionTime: "3 a 5 días hábiles",
     minQty: 2,
     description: "Set de 2 planchas con 36 stickers de superhéroes para decorar todo: cuadernos, regalos y celebraciones infantiles.",
-    images: ["assets/productos/stickers-superheroes-1.png", "assets/productos/stickers-superheroes-2.png"],
+    images: ["assets/productos/stickers-superheroes-1.jpg", "assets/productos/stickers-superheroes-2.jpg"],
     related: ["washi-01", "tag-zorrito"],
   },
   {
@@ -74,7 +74,7 @@ const LCG_PRODUCTS = [
     minQty: 8,
     description: "8 maxi etiquetas “Mini Héroes”, personalizadas con tu cuenta de Instagram, marca o nombre. Impresas en autoadhesivo brillante de 115 g.",
     customFields: ["Cuenta de Instagram", "Marca o nombre"],
-    images: ["assets/productos/maxi-etiquetas-1.png"],
+    images: ["assets/productos/maxi-etiquetas-1.jpg"],
     related: ["etq-mini", "washi-01"],
   },
   {
@@ -96,7 +96,7 @@ const LCG_PRODUCTS = [
     minQty: 15,
     description: "15 etiquetas “mini súper héroes”, personalizadas con tu cuenta de Instagram, marca o nombre. El personaje ilustrado puede variar según el stock disponible.",
     customFields: ["Cuenta de Instagram", "Marca o nombre"],
-    images: ["assets/productos/etiquetas-mini-heroes-1.png", "assets/productos/etiquetas-mini-heroes-2.png"],
+    images: ["assets/productos/etiquetas-mini-heroes-1.jpg", "assets/productos/etiquetas-mini-heroes-2.jpg"],
     related: ["etq-maxi", "stk-superheroes"],
   },
   {
@@ -118,7 +118,7 @@ const LCG_PRODUCTS = [
     minQty: 15,
     description: "15 tags dobles “Zorrito”, personalizados con tu cuenta de Instagram, marca o nombre, más 15 mini rayitos impresos en 3D (PLA amarillo).",
     customFields: ["Cuenta de Instagram", "Marca o nombre"],
-    images: ["assets/productos/tag-zorrito-1.png", "assets/productos/tag-zorrito-2.png"],
+    images: ["assets/productos/tag-zorrito-1.jpg", "assets/productos/tag-zorrito-2.jpg"],
     related: ["tag-conejita", "stk-superheroes"],
   },
   {
@@ -140,7 +140,7 @@ const LCG_PRODUCTS = [
     minQty: 15,
     description: "15 tags dobles “Conejita”, personalizados con tu cuenta de Instagram, marca o nombre, más 15 mini estrellitas impresas en 3D (PLA amarillo).",
     customFields: ["Cuenta de Instagram", "Marca o nombre"],
-    images: ["assets/productos/tag-conejita-1.png", "assets/productos/tag-conejita-2.png"],
+    images: ["assets/productos/tag-conejita-1.jpg", "assets/productos/tag-conejita-2.jpg"],
     related: ["tag-zorrito", "etq-maxi"],
   },
   {
@@ -162,7 +162,7 @@ const LCG_PRODUCTS = [
     minQty: 12,
     description: "12 tarjetones “Súper Pandita”, personalizados con tu cuenta de Instagram, marca o nombre.",
     customFields: ["Cuenta de Instagram", "Marca o nombre"],
-    images: ["assets/productos/tarjeton-pandita-1.png", "assets/productos/tarjeton-pandita-2.png"],
+    images: ["assets/productos/tarjeton-pandita-1.jpg", "assets/productos/tarjeton-pandita-2.jpg"],
     related: ["tarjeton-raton", "tag-conejita"],
   },
   {
@@ -184,7 +184,7 @@ const LCG_PRODUCTS = [
     minQty: 12,
     description: "12 tarjetones “Súper Ratón”, personalizados con tu cuenta de Instagram, marca o nombre.",
     customFields: ["Cuenta de Instagram", "Marca o nombre"],
-    images: ["assets/productos/tarjeton-raton-1.png", "assets/productos/tarjeton-raton-2.png"],
+    images: ["assets/productos/tarjeton-raton-1.jpg", "assets/productos/tarjeton-raton-2.jpg"],
     related: ["tarjeton-pandita", "tag-zorrito"],
   },
   {
@@ -206,7 +206,7 @@ const LCG_PRODUCTS = [
     productionTime: "Consultar",
     minQty: "Consultar",
     description: "Tags dobles “Feliz Día” con dije colgante a juego. Foto real cargada el 01/08/2026; precio, medidas y tiempos de producción a confirmar — escribinos por WhatsApp.",
-    images: ["assets/productos/tag-doble-dije-1.png"],
+    images: ["assets/productos/tag-doble-dije-1.jpg"],
     related: ["tag-zorrito", "tag-conejita"],
   },
   {
@@ -228,7 +228,7 @@ const LCG_PRODUCTS = [
     minQty: 24,
     description: "24 etiquetas “¡Feliz Día!”, personalizadas con tu cuenta de Instagram, marca o nombre. Impresas en autoadhesivo brillante de 115 g.",
     customFields: ["Cuenta de Instagram", "Marca o nombre"],
-    images: ["assets/productos/stickers-feliz-dia-1.png", "assets/productos/stickers-feliz-dia-2.png"],
+    images: ["assets/productos/stickers-feliz-dia-1.jpg", "assets/productos/stickers-feliz-dia-2.jpg"],
     related: ["stk-superheroes", "washi-01"],
   },
   {
@@ -249,7 +249,7 @@ const LCG_PRODUCTS = [
     productionTime: "3 a 5 días hábiles",
     minQty: 16,
     description: "16 etiquetas “Súper Cierra Todo” para sellar bolsitas de golosinas o regalitos. Impresas en autoadhesivo brillante de 115 g.",
-    images: ["assets/productos/super-cierra-todo-1.png", "assets/productos/super-cierra-todo-2.png"],
+    images: ["assets/productos/super-cierra-todo-1.jpg", "assets/productos/super-cierra-todo-2.jpg"],
     related: ["washi-01", "stk-superheroes"],
   },
   {
@@ -272,19 +272,19 @@ const LCG_PRODUCTS = [
     minQty: 15,
     description: "15 etiquetas “animales súper héroes”, personalizables con tu cuenta de Instagram, marca o nombre. Foto real cargada el 01/08/2026; precio a confirmar — escribinos por WhatsApp.",
     customFields: ["Cuenta de Instagram", "Marca o nombre"],
-    images: ["assets/productos/etiquetas-animales-heroes-1.png", "assets/productos/etiquetas-animales-heroes-2.png"],
+    images: ["assets/productos/etiquetas-animales-heroes-1.jpg", "assets/productos/etiquetas-animales-heroes-2.jpg"],
     related: ["etq-mini", "etq-maxi"],
   },
 ];
 
 const LCG_CATEGORIES = [
   { slug: "papeleria-emprendimientos", label: "Para emprendimientos", desc: "Stickers, tags y etiquetas para vestir tu marca.", colorClass: "1" },
-  { slug: "papeleria-reposteria", label: "Para repostería", desc: "Etiquetas y tags pensados para tortas y dulces.", colorClass: "2", image: "assets/productos/super-cierra-todo-1.png" },
-  { slug: "stickers", label: "Stickers y Washi Tapes", desc: "Para packaging, souvenirs y decoración.", colorClass: "3", image: "assets/productos/stickers-superheroes-1.png" },
-  { slug: "tags", label: "Tags y etiquetas", desc: "Mini tags y tags para regalo con cordón.", colorClass: "4", image: "assets/productos/tag-conejita-1.png" },
-  { slug: "tarjetas", label: "Tarjetas", desc: "Para regalar dinero, felicitar o dedicar.", colorClass: "1", image: "assets/productos/tarjeton-pandita-1.png" },
+  { slug: "papeleria-reposteria", label: "Para repostería", desc: "Etiquetas y tags pensados para tortas y dulces.", colorClass: "2", image: "assets/productos/super-cierra-todo-1.jpg" },
+  { slug: "stickers", label: "Stickers y Washi Tapes", desc: "Para packaging, souvenirs y decoración.", colorClass: "3", image: "assets/productos/stickers-superheroes-1.jpg" },
+  { slug: "tags", label: "Tags y etiquetas", desc: "Mini tags y tags para regalo con cordón.", colorClass: "4", image: "assets/productos/tag-conejita-1.jpg" },
+  { slug: "tarjetas", label: "Tarjetas", desc: "Para regalar dinero, felicitar o dedicar.", colorClass: "1", image: "assets/productos/tarjeton-pandita-1.jpg" },
   { slug: "toppers", label: "Toppers", desc: "A medida para coronar la torta del festejo.", colorClass: "2" },
-  { slug: "cumpleanos", label: "Cumpleaños infantiles", desc: "Colección Especial Día del Niño y kits temáticos.", colorClass: "3", image: "assets/productos/maxi-etiquetas-1.png" },
+  { slug: "cumpleanos", label: "Cumpleaños infantiles", desc: "Colección Especial Día del Niño y kits temáticos.", colorClass: "3", image: "assets/productos/maxi-etiquetas-1.jpg" },
   { slug: "colecciones", label: "Colecciones especiales", desc: "Ediciones limitadas y temporadas.", colorClass: "4" },
 ];
 

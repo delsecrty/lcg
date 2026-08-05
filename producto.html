@@ -4,16 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="page-title">Producto | LCG – Las Cosas Que Me Gustan</title>
-<meta name="description" id="page-desc" content="Papelería creativa y personalizada de LCG.">
+<meta name="description" id="page-desc" content="Papelería creativa y personalizada hecha a pedido en Argentina: stickers, tags, tarjetas y etiquetas para cada ocasión especial.">
 <link rel="canonical" id="page-canonical" href="https://www.lascosasquemegustan.com.ar/producto.html">
 <meta property="og:type" content="product">
+<meta property="og:site_name" content="LCG – Las Cosas Que Me Gustan">
 <meta property="og:title" id="og-title" content="LCG – Las Cosas Que Me Gustan">
-<meta property="og:description" id="og-desc" content="Papelería creativa y personalizada de LCG.">
+<meta property="og:description" id="og-desc" content="Papelería creativa y personalizada hecha a pedido en Argentina: stickers, tags, tarjetas y etiquetas para cada ocasión especial.">
 <meta property="og:url" id="og-url" content="https://www.lascosasquemegustan.com.ar/producto.html">
 <meta property="og:image" id="og-image" content="https://www.lascosasquemegustan.com.ar/assets/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" id="twitter-title" content="LCG – Las Cosas Que Me Gustan">
-<meta name="twitter:description" id="twitter-desc" content="Papelería creativa y personalizada de LCG.">
+<meta name="twitter:description" id="twitter-desc" content="Papelería creativa y personalizada hecha a pedido en Argentina: stickers, tags, tarjetas y etiquetas para cada ocasión especial.">
 <meta name="twitter:image" id="twitter-image" content="https://www.lascosasquemegustan.com.ar/assets/og-image.jpg">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
@@ -463,7 +464,10 @@
       "url": pageUrl
     }
   };
-  if (!product.priceOnRequest) jsonld.offers.price = product.price;
+  if (!product.priceOnRequest) {
+    jsonld.offers.price = product.price;
+    jsonld.offers.priceValidUntil = '2026-12-31';
+  }
   document.getElementById('product-jsonld').textContent = JSON.stringify(jsonld);
 })();
 </script>

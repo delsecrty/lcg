@@ -38,7 +38,7 @@ function lcgRenderProductMedia(product) {
       </div>`;
   }
   const main = `<img src="${images[0]}" alt="${product.name}" loading="lazy" width="400" height="400">`;
-  const alt = images[1] ? `<img class="img-alt" src="${images[1]}" alt="" loading="lazy" width="400" height="400">` : "";
+  const alt = images[1] ? `<img class="img-alt" src="${images[1]}" alt="${product.name} – foto adicional" loading="lazy" width="400" height="400">` : "";
   return main + alt;
 }
 
@@ -82,7 +82,7 @@ function lcgRenderProductGrid(containerSelector, products) {
 
 function lcgRenderCategoryCard(cat) {
   const media = cat.image
-    ? `<img src="${cat.image}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;">`
+    ? `<img src="${cat.image}" alt="${cat.label}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">`
     : `<div class="ph-photo" aria-hidden="true" style="background:none;">
         <svg viewBox="0 0 24 24" width="40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l2.6 6.6L22 10l-5.4 4.6L18 22l-6-3.6L6 22l1.4-7.4L2 10l7.4-1.4L12 2z"/></svg>
       </div>`;
